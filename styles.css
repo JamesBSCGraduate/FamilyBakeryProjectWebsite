@@ -1,0 +1,103 @@
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+.nav
+{
+  justify-content: center;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;        
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1, p, h2
+{
+      text-align: center;
+      text-decoration: burlywood;
+
+}
+
+/* Styles for main content */
+.content {
+  padding: 20px;
+}
+/* Styles for footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Navigation bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Navigation bar animation */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.navbar {
+  animation: fadeIn 1s ease-in-out;
+}
+/* Image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Image styles */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Caption styles */
+.image-caption {
+  text-align: center;
+  margin-top: 10px;
+}
